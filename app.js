@@ -5,13 +5,13 @@ function calculateCalories() {
 	let firstResult = (((7700 * (currentWeight - desiredWeight)) / weeksCalculation) / 7);
 	let secondResult = (((7700 * (desiredWeight - currentWeight)) / weeksCalculation) / 7);
 	if (currentWeight > desiredWeight) {
-		alert("If you want to achive the desired wieght, you have to lose " + firstResult + " per day!");
+		alert("If you want to achive the desired wieght, you have to lose " + firstResult + " calories per day!");
 		let confirmation = confirm("Want to calculate calories again?");
 		if (confirmation === true) {
 			calculateCalories();
 		} 
 	} else {
-		alert("If you want to achive the desired wieght, you have to gain " + secondResult + " per day!");
+		alert("If you want to achive the desired wieght, you have to gain " + secondResult + " calories per day!");
 		let confirmation = confirm("Want to calculate calories again?");
 		if (confirmation === true) {
 			calculateCalories();
